@@ -1,0 +1,91 @@
+.fu_popover_theme_noaa {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: 1060;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #0A4595;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    height: 164px;
+ }
+ .fu_popover_header_theme_noaa{
+    margin: 0;
+    padding: 4px;
+    font-size: 12px;
+    text-align: left;
+    color:#FFFFFF;
+    background-color: #0099D8;
+    border-bottom: 1px solid #0A4595;
+    border-radius: 4px 4px 0 0;
+ }
+ .fu_popover_content_theme_noaa{
+    padding: 4px;
+    font-size: 11px; 
+    text-align:start;     
+ }
+ .fu_popover_theme_noaa:after, .fu_popover_theme_noaa:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+ }
+ .fu_popover_theme_noaa:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 10px;
+ }
+ .fu_popover_theme_noaa:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 11px;
+ }
+ .arrow_top_theme_noaa:after{
+    left: 50%;
+    bottom: 100%;
+    border-bottom-color: #FFFFFF;
+    margin-left: -10px;
+ }
+ .arrow_top_theme_noaa:before{
+    left: 50%;
+    bottom: 100%;
+    border-bottom-color: #0A4595;
+    margin-left: -11px;
+ }
+ .arrow_bottom_theme_noaa:after{
+    left: 50%;
+    top: 100%;
+    border-top-color: #FFFFFF;
+    margin-left: -10px;
+ }
+ .arrow_bottom_theme_noaa:before{
+    left: 50%;
+    top: 100%;
+    border-top-color: #0A4595;
+    margin-left: -11px;
+ }
+ .arrow_left_theme_noaa:after{
+    right: 100%;
+    top: 50%;
+    border-right-color: #FFFFFF;
+    margin-top: -10px;
+ }
+ .arrow_left_theme_noaa:before{
+    right: 100%;
+    top: 50%;
+    border-right-color: #0A4595;
+    margin-top: -11px;
+ }
+ .arrow_right_theme_noaa:after{
+    left: 100%;
+    top: 50%;
+    border-left-color: #FFFFFF;
+    margin-top: -10px;
+ }
+ .arrow_right_theme_noaa:before{
+    left: 100%;
+    top: 50%;
+    border-left-color: #0A4595;
+    margin-top: -11px;
+ } 

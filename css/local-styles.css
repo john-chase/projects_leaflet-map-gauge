@@ -1,0 +1,14 @@
+/*elements*/
+body{font-family:'Roboto',sans-serif;font-size:1em;background-color:#fff;}
+header{display:table;width:100%;background-color:#000;display:flex;align-items:center;justify-content:center;}
+h1{font-family:'Russo One',sans-serif;padding-top:20px;text-align:center;color:dodgerblue;font-weight:bold;font-size:2.5em;margin:1rem 0 2rem 0;text-shadow:2px 2px #fff;display:table-cell;vertical-align:middle;}
+
+/*classes*/
+.hidden{display:none}
+.right{float:right;}
+.left{float:left;}
+.bc-div{margin-top:-2rem;padding:0 0 .5rem 0;background-color:#000;}
+.breadcrumbs {margin:0 0 1.5rem 4rem;padding:0;color:#2d8bf0;background-color:#000!important;}
+.breadcrumbs li{display:inline;}
+.breadcrumbs a{color:#6298d3;text-decoration:none;}
+.breadcrumbs a:hover{color:#fff;text-decoration:underline;}
