@@ -4,8 +4,15 @@ header{display:table;width:100%;background-color:#fff;display:flex;align-items:c
 h1{font-family:'Russo One',sans-serif;padding-top:20px;text-align:center;color:dodgerblue;font-weight:bold;font-size:2.5em;margin:1rem 0 2rem 0;text-shadow:2px 2px #ddd;display:table-cell;vertical-align:middle;}
 
 #logo{margin-left:2.5rem;}
+#cir-footer-wrapper {text-align:center;}
+#cir-footer-wrapper a {color:#3d99fd;}
+#cir-footer-wrapper a:hover {color:white;}
+#cir-footer-menu {margin:0; padding:1rem 0 0 0; font-size:1em; text-align:center; background-color:black; position:fixed; bottom:0; width:100%;}
+#footer-menu li {display:inline; margin:0; padding-left:0; background-image:none;}
+#gauges{padding-bottom:6rem;}
 
 /*classes*/
+.copyright {font-size:80%; color:white;padding-bottom:1em;}
 .hidden{display:none}
 .right{float:right;}
 .left{float:left;}
