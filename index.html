@@ -1,6 +1,5 @@
 <!-- TODO:
-*Make map not scrollable with scrollbar
-*Use includes for header, BCs, footer
+*Fix map z-index higher than footer
 -->
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -20,14 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto&display=swap" rel="stylesheet">     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />    
-    <link rel="stylesheet" href="/PROJECTS/css/global-styles.css">
+    <link rel="stylesheet" href="/css/global-styles.css">
     <link rel="stylesheet" href="css/local-styles.css">
     <link rel="stylesheet" href="css/livestream-styles.css">
     <link rel="stylesheet" href="css/popover.css" />    
 </head>
 
 <body>
-    <!--#include virtual="/PROJECTS/includes/header.html"-->    
+    <!--#include virtual="/includes/header.html"-->    
     <div class="container content">
         <div class="row">
             <div class="col-xs-12 col-md-12">
@@ -48,6 +47,7 @@
                         <div id="mapid" class="mapSize">
                             <p><i class="fa fa-spinner fa-spin"></i>&nbsp;Loading map...</p>                      
                         </div>
+                        <div id="dlg" ><p>Dialog </div>
                         <p class="caption">Map data courtesy of <a href="https://noaa.maps.arcgis.com/home/group.html?id=62137203f7d34d5ca1b3108acd1b4884#overview" target="_blank">NOAA's National Centers for Environmental Information</a> (NCEI).</p>                                                                                                           
                         <hr>                    
                         <!-- END MAP EMBED -->
@@ -163,7 +163,7 @@
 		    </div>
         </div><!--end .row-->
     </div><!--end .container-->
-    <!--#include virtual="/PROJECTS/includes/footer.html"-->    
+    <!--#include virtual="/includes/footer.html"-->    
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>    
@@ -179,6 +179,7 @@
     <script src="js/popover-init.js"></script>
     <script>
         jQuery(document).ready(function($){
+            $("#map-id").html(".leaflet-top z-index=" + $(".leaflet-top").css("z-index") ).dialog();
             //Gauge Tabs
             $(".gtab").click(function (e) {
                 e.preventDefault()

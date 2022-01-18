@@ -116,7 +116,7 @@ function genMap(result,urls,gauges,cont) { if(!cont){return;}
         }
     });
     /*init map*/
-    var map = L.map('mapid',{zoomSnap: 0});
+    var map = L.map('mapid',{zoomSnap: 0, scrollWheelZoom: 0});
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
     }).addTo(map);
