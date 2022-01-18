@@ -1,5 +1,6 @@
 /*elements*/
 #gauges{padding-bottom:6rem;}
-.cir-footer-wrapper{z-index:9999999!important}
+#footer-menu li {padding:1rem 0 0 0!important}
+#cir-footer-menu {padding:1rem 0 0 0!important}
 @media(max-width:447px){h1{text-align:left;margin-left:1rem;}#logo{margin-left:1rem!important;}.bc-div{padding:1rem 0 1rem 2rem;}}
 @media(max-width:714px){.bc-div{padding:1rem 0 1rem 1rem;}}
